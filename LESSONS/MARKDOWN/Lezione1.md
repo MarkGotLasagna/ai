@@ -36,7 +36,11 @@ e.g.: camminare senza colpire ostacoli lo sappiamo fare, ma non è affatto sempl
   Le reti neurali finiscono in questo campo.
   Supponiamo di realizzare software che pensi come una persona: come pensa una persona? L'approccio operativo/scientifico detta che i *pensieri* provenienti dal *cervello*, sono quelli che ci interessano; riprodurre il pensiero delle persone è quello di simulare una mente. Il nostro cervello è formato da cellule più o meno tutte uguali, collegate da una rete: una volta che capiamo il funzionamento dei *neuroni*, chiamiamo **rete neuronale artificiale** il nostro sistema simulato.
 - pensare in modo *razionale*
+  Siccome le persone non sono razionali, non ci basta simularle, dobbiamo capire fino in fondo cosa vuole dire "essere razionali".
 - agire in modo *umano*
+  Affrontiamo l'argomento pensando ad Alan Turing (1912-1954).
+  La realizzazione di macchine tramite test empirico noto come **Turing test**, che vede la prima proposta alla realizzazione, nell'articolo della rivista "Mind", viene così presentato: "Can machines think?"
+  La risposta viene proposta empiricamente usando appunto il test di Turing, che negli anni si è evoluto e oramai non è più quello originale. 
 - agire in modo *razionale*
 
 Tutti gli esperimenti coinvolgenti AI, finivano in un asse comprendente questi punti; esplorare le possibilità ci permetterà di capire quanto è stato fatto e fare un elenco di argomenti che verranno discussi nel corso.

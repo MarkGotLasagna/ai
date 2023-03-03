@@ -1,2 +1,4 @@
 # Lessons
 - [[UNI/AI/LESSONS/MARKDOWN/Lezione1]]
+- [[UNI/AI/LESSONS/MARKDOWN/Lezione2]]
+- [[UNI/AI/LESSONS/MARKDOWN/Lezione3]]
