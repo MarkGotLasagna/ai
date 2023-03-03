@@ -23,7 +23,7 @@ Nel test originale non c'era nessuna menzione di scacchi; anche se il test è em
 | ----------------------------------------- | --- |
 | ![[Pasted image 20230303100447.png\|200]] |   ![[Pasted image 20230303100619.png\|350]]  | 
 Tranne Turing, in molti si sono messi a sviluppare sistemi d'imitazione di comportamento umano (Siri, Alexa, Google Now,...) . 
-Eliza è un sistema, realizzato dall'informatico tedesco J.Weizenbaum, il cui scopo è quello di "smontare" il concetto d'intelligenza, dimostrando che il comportamento ottenuto sarebbe stato scarso e che non valeva la pena d'intraprendere la strada degli imitation game.
+Eliza fu un sistema, realizzato dall'informatico tedesco J.Weizenbaum, il cui scopo era quello di "smontare" il concetto d'intelligenza, dimostrando che il comportamento ottenuto sarebbe stato scarso e che non valeva la pena d'intraprendere la strada degli imitation game.
 Avvenne l'opposto: Eliza spinse allo studio degli imitation game, ancorà più di quanto non fosserò già studiati.
 
 Eliza funziona come psicoterapeuta "Rogerian": il paziente viene incalzato nel parlare il più possibile, descrivendo i propri problemi e perplessità, come in una seduta reale (vedere immagine sotto).
@@ -38,13 +38,13 @@ Nei periodi classici, già si cercava di capire se il pensiero è logico o meno.
 I **linguaggi logici** sono modi per raggiungere *deduzioni*: un sistema software le cui deduzioni sono pensieri razionali, è capace di pensare razionalmente.
 $$A \implies B$$
 $$\mathtt{if}\ B\ \mathtt{then}\ A$$
-Possiamo così imporre regole sul nostro sistema, come per esempio vendere la criptovaluta nel momento in cui il prezzo è ottimale o massimo, rispetto a una soglia o media. Vincolare il comportamento e pensiero razionale, permette di mettere sotto controllo il tempo di risposta del sistema.
+Possiamo così imporre regole sul nostro sistema, come per esempio vendere la cripto valuta nel momento in cui il prezzo è ottimale o massimo, rispetto a una soglia o media. Vincolare il comportamento e pensiero razionale, permette di mettere sotto controllo il tempo di risposta del sistema.
 
 Forniti i fatti, possiamo fare deduzioni che a loro volta saranno fatti:
 - fatti: $\mathtt{mother\_of(ann,bob)}$, $\mathtt{sister\_of(claire,ann)}$
 - regole d'inferenza: $\mathtt{mother\_of(X,Y) \wedge\ sister\_of(Z,X)\rightarrow aunt\_of(Z,Y)}$ 
 
-Quando il numero di regole cresce, diventa difficile tenere sotto controllo tutte le regole. Si è capito che con **sistemi esperti**, è molto difficile tenere sotto controllo le decisioni.
+Quando il numero di regole cresce, diventa difficile tenere sotto controllo tutte le dinamiche dei così detti **sistemi esperti**. 
 
 ## MYCIN (E. Shortliffe, '70)
 | Edward Shortliffe (1947-)                 | MYCIN |
@@ -52,7 +52,7 @@ Quando il numero di regole cresce, diventa difficile tenere sotto controllo tutt
 | ![[Pasted image 20230303103819.png\|200]] | ![[Pasted image 20230303104019.png\|400]]      |
 MYCIN fu creato da Edward Shortliffe all'inizio degli anni '70, nel tentativo di realizzare un sistema capace di realizzare diagnosi medica. L'obbiettivo del sistema esperto era quello d'interpretare i sintomi dei pazienti e fornire una diagnosi il più accurata possibile, prescrivendo medicinali se necessario.
 
-Le regole per MYCIN erano più di 600, un numero molto grande da contenere: un qualche percorso porta a deduzione magari completamente errata, ma che è inevitabile con così tante dinamiche. Il sistema era in grado di porre domande booleane all'utente, per approfondire e fornire necessità informative per portare la deduzione.
+Le regole per MYCIN erano più di 600, un numero molto grande da contenere. Il sistema era in grado di porre domande booleane all'utente, per approfondire e fornire così necessità informative, per arrivare a una deduzione.
 
 I numerosi test di Turing effettuati sul sistema, erano mirati a capire quanto fosse capace di fornire diagnosi accurate, rispetto a quelle dedotte da medici reali con esperienza in campo medico. Uno dei tanti risultati più noti, fu quello dell'individuazione corretta nel 69% dei casi, del problema, e una prescrizione adeguata dei farmaci. Magari la percentuale può sembrare bassa (3/10 pazienti prendono l'aspirina piuttosto che una altro farmaco), ma non lo è guardando al fatto che gli stessi dottori/autorità che hanno costruito il sistema, hanno sbagliato di più nonostante le regole le conoscessero.
 
@@ -69,8 +69,8 @@ Dal punto di vista degli obbiettivi, superare il test di Turing non è lo scopo 
 | ![[Pasted image 20230303105925.png\|300]] |     ![[Pasted image 20230303105808.png]]   |
 Sistema classico che diede spinta enorme all'AI; vedere funzionare il sistema in giro per il mondo, siccome spostato fisicamente, ha mosso il campo dell'intelligenza artificiale.
 
-SHRDLU ha lo scopo di spostare una serie di blocchi in un mondo virtuale.
-I blocchi hanno forme diverse, possono essere parallelepipedi o cubi o piramidi che con un braccio meccanico, con input dell'utente, vengono spostati a piacimento all'interno del mondo immaginario.
+SHRDLU ha lo scopo di muovere una serie di blocchi in un mondo virtuale.
+I blocchi hanno forme diverse, possono essere parallelepipedi o cubi o piramidi che con un braccio meccanico, tramite input utente, vengono spostati a piacimento all'interno del mondo immaginario.
 
 Il sistema funziona molto bene, è in grado d'interpretare le richieste in linguaggio naturale anche sofisticato, per compiere un obbiettivo, come per esempio costruire una pila di blocchi dentro una scatola.
 
@@ -83,10 +83,10 @@ Agire razionalmente è anche agire in modo economico; pensare in modo razionale 
 La game theory viene utilizzata per sviluppare agenti intelligenti che si comportano nel modo migliore, per quel particolare gioco di cui parliamo (come gli scacchi); fu popolarizzata da *John Nash* (1928-2015) e usata in studi economici e AI.
 
 Spesso l'AI si restringe a giochi con le seguenti caratteristiche:
-- ci sono solo 2 giocatori, alternati a turni;
+- ci sono solo 2 giocatori, che si alternano a turni;
 - le regole sono formalizzate;
-- l'ambiente su cui si gioca è completamente accessibile, nel senso che ogni giocatore vede tutto dell'ambiente e nulla è nascosto, conoscenza perfetta;
-- i vincoli di tempo non sono stretti e non sono il vero problema di affrontare il gioco.
+- l'ambiente in cui si gioca è completamente accessibile, nel senso che ogni giocatore vede tutto dell'ambiente e nulla è nascosto, conoscenza perfetta;
+- i vincoli di tempo non sono stretti e non sono il vero problema dell'affrontare il gioco.
 
 Esempi classici: la dama e gli scacchi sono spesso presi in esame.
 
@@ -103,7 +103,7 @@ I primi incontri organizzati contro Garry Kasparov, "grand master" famosissimo g
 ![[Pasted image 20230303114913.png|500]]
 
 Da notare il fatto che Deep Blue non era infallibile: il tempo per stabilire la mossa ottima da effettuare, nei tempi prestabiliti per una partita di scacchi, non vi entrava in alcun modo; il calcolo della mossa avrebbe sforato di moltissimo il tempo a disposizione. Questo è dato dal fatto che l'avanzamento tecnologico di allora, semplicemente non portava a risultati performanti abbastanza.
-Al suo, Deep Blue contiene quindi tecniche approssimative che non permettono di stabilire la mossa ottima, ma di rispondere in tempo adeguato per poter vincere contro il campione mondiale.
+Deep Blue contiene quindi tecniche approssimative che non permettono di stabilire la mossa ottima, ma di rispondere in tempo adeguato per poter vincere contro il campione mondiale.
 
 ### AlphaGo
 ![[Pasted image 20230303115230.png|300]]
@@ -113,7 +113,7 @@ Esempi noti di partite, sono quelle giocate contro il campione di Go europeo Fan
 
 ![[Pasted image 20230303121307.png|450]]
 
-AlphaGo usa sistemi di approssimazione (la mossa ottima è possibile, ma nemmeno il Cloud di Google del 2015 sarebbe riuscito a proporla in tempi ragionevoli). In dettaglio, utilizza la stessa tecnica usata da Deep Blue, ma l'approssimazione è diversa siccome si appoggia alle reti neurali.
+AlphaGo usa sistemi di approssimazione (la mossa ottima è possibile, ma nemmeno il Cloud di Google del 2015 sarebbe riuscito a proporla in tempi ragionevoli). In dettaglio, utilizza la stessa tecnica usata da Deep Blue, ma appoggiandosi alle reti neurali.
 
 Giocando in numerosissimi ambienti diversi, AlphaGo passò dal non conoscere nulla di Go, a essere impeccabile, associando a ogni mossa compiuta, una "bontà" o indice positivo di apprendimento. In questo modo, la rete neurale imparò le mosse migliori da fare durante il gioco.
 
@@ -124,7 +124,7 @@ AlphaGo venne ritirato dal pubblico in occasione del suo successore, AlphaGo Zer
 Nel quiz show "Jeopardy!" del 2011, compete e vince 1 milione di dollari, il sistema Watson, un'intelligenza con la capacità di rispondere in linguaggio naturale a domande poste.
 Il linguaggio, spesso e volentieri viene reso complicando facendo giri di parole, per rendere lo spettacolo più accattivante per il pubblico.
 
-Watson ha la particolarità di comprendere per davvero il testo, e lo fa usando la libreria completa di allora di Wikipedia: l'intero database di pagine web e pdf, venne installato e usato come fonte, per rispondere alle domande del conduttore.
+Watson ha la particolarità di comprendere per davvero il testo, e lo fa usando la libreria completa di allora di Wikipedia: l'intero database di pagine web e PDF, venne installato e usato come fonte, per rispondere alle domande del conduttore.
 
 ---
 28/02/2023

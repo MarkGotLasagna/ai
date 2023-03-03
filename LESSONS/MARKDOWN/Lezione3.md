@@ -1,26 +1,27 @@
 ```toc
 ```
 # Generalizzazioni algebriche
-Vediamo i concetti algebrici fondamentali per apprendere nelle lezioni successive, la matematica dietro i principali algoritmi per lo studio dell'AI.
+Vediamo i concetti algebrici fondamentali per apprendere nelle lezioni successive, la matematica dietro i principali algoritmi dell'AI.
 
 ![[Pasted image 20230303183637.png|300]]
 L'insieme di numeri verrà rappresentato con la seguente notazione:
 - $\mathbb{N}$ l'insieme dei *numeri naturali* incluso lo $0$
-  e.g.: $0,1,2,3,\dots$ 
+  $$0,1,2,3,\dots$$
 - $\mathbb{Z}$ l'insieme dei *numeri interi*, costruiti partendo dai numeri naturali
-  e.g.: $-1, 0, 1, \dots$
+  $$-1, 0, 1, \dots$$
 - $\mathbb{Q}$ l'insieme dei *numeri razionali*
-  e.g.: $\frac{1}{2}, \frac{5}{4}, 0.5, \dots$
-- $\mathbb{R}$ l'insieme dei *numeri reali*, che comprende tutti gli insiemi visti fino adesso
+  $$1/2, 5/4, 0.5, \dots$$
+- $\mathbb{R}$ l'insieme dei *numeri reali*, che comprende tutti gli insiemi visti fino adesso aggiungendo i numeri irrazionali e trascendentali quali
+  $$\sqrt{2}, \pi, e$$
 - $\mathbb{C}$ l'insieme dei *numeri complessi*
-  e.g.: $1+3i$ con $3i$ la parte immaginaria
+  $$1+3i$$ con $3i$ la parte immaginaria
 
-Con il simbolo $_+$, indichiamo solo i numeri positivi contenuti nell'insieme.
+Con il simbolo $_+$, indicheremo solo i numeri positivi contenuti nell'insieme.
 ## Vettori reali
 ![[Pasted image 20230303185107.png|200]]
 Fissato $n \in \mathbb{N}_+$, un elemento $\mathbf{x}$ dell'insieme $\mathbb{R}^n$ (spazio normato) viene detto *vettore reale* con la seguente nomenclatura
 $$\mathbf{x}\in \mathbb{R}^n\qquad \mathbf{x}=(x_1,x_2,\dots,x_n)=(x_i)^n_i$$
-Scriviamo il vettore di elementi, che trattando matrici diventa vettore colonna: il fatto che sia con le virgole in orizzontale è convenzione.
+Il vettore di elementi trattando matrici diventa vettore colonna: il fatto che sia con le virgole in orizzontale è convenzione.
 $$
 \begin{pmatrix}
 	x_1,x_2,\cdots,x_n
@@ -32,15 +33,15 @@ $$
 	x_n
 \end{pmatrix}
 $$
-I vettori possono essere sommati e moltiplicati per *vettore* o *scalare*:
+I vettori possono essere a loro volta sommati e moltiplicati per *vettore* o *scalare*:
 - elementi moltiplicati $\mathbb{R}^n$, creano elementi contenuti in $\mathbb{R}^n$;
 - elementi sommati, anche loro daranno prodotto in $\mathbb{R}^n$
 
 ## Lunghezza di un vettore: norma euclidea
-Compreso il fatto che $\mathbb{R}^n$ sia uno *spazio vettoriale*, per definire la sua lunghezza usiamo la **norma euclidea**:
+Compreso il fatto che $\mathbb{R}^n$ sia uno *spazio vettoriale*, per definire la sua lunghezza di un vettore $\mathbf{x}$ usiamo la **norma euclidea**:
 $$||\mathbf{x}||\triangleq\sqrt{\sum_{i=1}^{n}x^2_i}$$
 >[!note] Dimensione vs Lunghezza
-Nella notazione matematica precisa, si dice *dimensione* dello spazio, il <u>numero di componenti del vettore</u>. Da quindi non confondere con la lunghezza effettiva, calcolata con il metodo sopra.
+Nella notazione matematica precisa, si dice *dimensione* dello spazio, il <u>numero di componenti del vettore</u>. Da quindi non confondere con la lunghezza, calcolata con il metodo sopra.
 
 Delle radici, usiamo solo la parte positiva, per ogni $\mathbf{x}\in \mathbb{R}^n$ vale quindi:
 $$||\mathbf{x}||\geq0\qquad ||\mathbf{x}||=0\iff \mathbf{x}=0$$
@@ -52,7 +53,7 @@ $$||\mathbf{x}+\mathbf{y}||\leq ||\mathbf{x}||+||\mathbf{y}||$$
 Presi 2 vettori in $\mathbf{x},\mathbf{y}\in\mathbb{R}^n$, vale la disuguaglianza sopra.
 La norma euclidea fa valere la disuguaglianza triangolare.
 >[!example] Esempio
->Si consideri il caso $n=2$
+>Si consideri il caso $n=2$ per $\mathbb{R}^n$
 >$$\mathbf{x}=(x_1,0)\qquad \mathbf{y}=(0,y_2)$$
 >allora
 >$$||\mathbf{x}||+||\mathbf{y}||=||x_1||+||y_2||\geq \sqrt{x_1^2+y_2^2}=||\mathbf{x}+\mathbf{y}||$$
@@ -62,18 +63,18 @@ $$d(\mathbf{x},\mathbf{y})\triangleq||\mathbf{x}-\mathbf{y}||=||\mathbf{y}-\math
 Ragionando sulla norma euclidea, siccome è somma di quadrati, cambiare il segno non porta al cambiamento di segno del risultato, portando alla stessa quantità.
 ## Prodotto scalare
 Sempre per due vettori $\mathbf{x},\mathbf{y}\in\mathbb{R}^n$, si dice **prodotto scalare**:
-$$\mathbf{x}*\mathbf{y}\triangleq\sum_{i=1}^{n}x_iy_i$$
+$$\mathbf{x}\cdot \mathbf{y}\triangleq\sum_{i=1}^{n}x_iy_i$$
 Il numero reale generato non è quindi per forza positivo. 
 Per ogni $\mathbf{x}\in \mathbb{R}^n$ (spazio con prodotto interno), vale:
-$$||\mathbf{x}||^2=\mathbf{x}*\mathbf{x}\qquad 0*\mathbf{x}=\mathbf{x}*0=0$$
+$$||\mathbf{x}||^2=\mathbf{x}\cdot \mathbf{x}\qquad 0\cdot \mathbf{x}=\mathbf{x}\cdot 0=0$$
 ## Disuguaglianza di Cauchy-Schwartz
-$$|\mathbf{x}*\mathbf{y}|\leq||\mathbf{x}||*||\mathbf{y}||$$
+$$|\mathbf{x}\cdot \mathbf{y}|\leq||\mathbf{x}||\cdot||\mathbf{y}||$$
 Ci servirà per approssimare i punti nel *training set* della nostra rete neurale; presi 2 vettori $\mathbf{x},\mathbf{y}\in \mathbb{R}_n$, ci accorgiamo che il valore assoluto del prodotto dei 2, è minore/uguale al prodotto delle due lunghezze.
 L'uguaglianza vale solamente quando esiste coefficiente $\lambda\in\mathbb{R}$ tale che $\mathbf{x}=\lambda \mathbf{y}$.
 
 ---
 Per una dimensione di grandeza 2, calcoliamo
-$$\mathbf{x}*\mathbf{y}=x_1y_1+x_2y_2$$
+$$\mathbf{x}\cdot \mathbf{y}=x_1y_1+x_2y_2$$
 ruotiamo di un angolo $\beta\in \mathbb{R}$
 $$\mathbf{x}'=\mathit{R}_\beta \mathbf{x}\qquad \mathbf{y}'=\mathit{R}_\beta \mathbf{y}$$
 dove
@@ -84,9 +85,9 @@ $$\mathit{R}_\beta=
 \end{pmatrix}
 $$
 Ottenendo
-$$\mathbf{x}'*\mathbf{y}'=\mathbf{x}*\mathbf{y}$$
+$$\mathbf{x}'\cdot \mathbf{y}'=\mathbf{x}\cdot \mathbf{y}$$
 Ci permette di muovere uno dei 2 vettori, per esempio, sull'asse delle ascisse e usando l'angolo tra i due vettori $\theta\in \mathbb{R}^n$, calcolare il vettore $\mathbf{y}$ con:
-$$|\mathbf{x}*\mathbf{y}|=|||\mathbf{x}||*||\mathbf{y}||\cos\theta|\leq||\mathbf{x}||*||\mathbf{y}||$$
+$$|\mathbf{x}\cdot \mathbf{y}|=|||\mathbf{x}||\cdot ||\mathbf{y}||\cos\theta|\leq||\mathbf{x}||\cdot ||\mathbf{y}||$$
 ---
 ## Matrice ortogonale
 Si dice **ortogonale** una matrice di ordine $n\in\mathbb{N}_+$ se e soltanto se è invertibile e vale:
@@ -99,10 +100,10 @@ La rotazione non fa mai cambiare il verso dei nostri vettori; prendiamo in esame
 ## Matrice di rotazione
 ![[Pasted image 20230303190040.png|150]]
 Per le matrici ortogonali, e non solo, si dice **matrice di rotazione** una matrice $\mathit{R}$ per ogni $\mathbf{x},\mathbf{y}\in \mathbb{R}^n$ che soddisfa:
-$$\mathit{R}\mathbf{x}*\mathit{R}\mathbf{y}=\mathbf{x}*\mathbf{y}$$
+$$\mathit{R}\mathbf{x}\cdot \mathit{R}\mathbf{y}=\mathbf{x}\cdot \mathbf{y}$$
 ## Vettori ortogonali & Dipendenza lineare
 Dato $n\in \mathbb{N}_+$, due vettori $\mathbf{x},\mathbf{y}\in \mathbb{R}^n$ entrambi diversi da $0$, si dicono **ortogonali** se e soltanto se:
-$$\mathbf{x}*\mathbf{y}=0$$
+$$\mathbf{x}\cdot \mathbf{y}=0$$
 Chiamiamo la "nuvola" di punti, un cluster di punti che se uniti formano vettori *mutualmente ortogonali*, indicati con la notazione $\mathit{O}\subset\mathbb{R}^n$. Se i punti soddisfano la proprietà allora l'insieme di vettori si dicono **linearmente indipendenti**.
 ## Rette
 ![[Pasted image 20230303190146.png|200]]
