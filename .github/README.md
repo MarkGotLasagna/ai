@@ -3,14 +3,30 @@
 <div align=center>
   <image src=/.pics/graph.png width=55%></image></br></br>
 </div>
-Imparare il concetto d'Intelligenza Artificiale, studiando la matematica dei metodi.
+
+Imparare il concetto d'Intelligenza Artificiale, studiando la matematica dietro i metodi.
+Possiamo elencare gli argomenti in macro-sezioni come segue:
+- (Lez01-Lez02) Storia dell'AI e concetti di base;
+- (Lez03-Lez05) **Analisi base** e prime discussioni sulla **discesa del gradiente**;
+- (Lez06-Lez11) Classificazione delle **reti neurali**;
+- (Lez12-Lez14) **Constraint Satisfaction Problems**;
+- (Lez15-Lez16) Il **linguaggio dei termini**;
+- (Lez17-...) **PROLOG**.
+
+Se siete interessati unicamente ai file PDF, il seguente comando li estrae.
+```
+git clone --filter=blob:none --depth 1 --sparse https://github.com/MarkGotLasagna/ai && \
+    cd ai && \
+    git sparse-checkout init --cone && \
+    git sparse-checkout set LESSONS/PDF EXERCISES/PDF
+```
 
 ## Dir structure
-Subirà modifiche durante il corso.
 ```
 /home/maruko/Documents/Obsidian\ Vault\UNI\AI\
 └── LESSONS -> file markdown e PDF delle trascrizioni
 └── EXERCISES -> esercitazioni svolte in presenza
 ```
+
 ## Contributing
 Siete liberi di fare precisazioni o correzzioni o altro, aprendo "Issues" o "Pull Request" negli appositi TAB.
