@@ -26,6 +26,7 @@ git clone --filter=blob:none --depth 1 --sparse https://github.com/MarkGotLasagn
 /home/maruko/Documents/Obsidian\ Vault\UNI\AI\
 └── LESSONS -> file markdown e PDF delle trascrizioni
 └── EXERCISES -> esercitazioni svolte in presenza
+└── src --> plot ascesa/discesa gradiente
 ```
 
 ## Contributing
