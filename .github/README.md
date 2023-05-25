@@ -1,7 +1,7 @@
 # Intelligenza Artificiale 2022/2023
 
 <div align=center>
-  <image src=/.pics/graph.png width=55%></image></br></br>
+  <image src=/.pics/graph.png width=50%></image></br></br>
 </div>
 
 Imparare il concetto d'Intelligenza Artificiale, studiando la matematica dietro i metodi.
