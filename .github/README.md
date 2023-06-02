@@ -11,7 +11,7 @@ Possiamo elencare gli argomenti in macro-sezioni come segue:
 - (Lez06-Lez11) Classificazione delle **reti neurali**;
 - (Lez12-Lez14) **Constraint Satisfaction Problems**;
 - (Lez15-Lez16) Il **linguaggio dei termini**;
-- (Lez17-Lez24) **PROLOG** e **Logica di primo ordine.
+- (Lez17-Lez24) **PROLOG** e **Logica di primo ordine**.
 
 Se siete interessati unicamente ai file PDF, il seguente comando li estrae.
 ```
