@@ -4,13 +4,14 @@
 > [!abstract] Mathematica per la rappresentazione dei grafici
 > Nel caso foste interessati a vedere voi stessi la funzione, potete passare i seguenti comandi a https://mathematica.wolframcloud.com . Alternativamente, consiglio di utilizzare i programmi forniti nella cartella `/src` della repository.
 > ```
-> Plot3D[{x^2 - 40 x + 4 y^2 + 400}, {x, -20, 60}, {y, -2, 1},  
->	PlotRange -> All, AxesLabel -> {x, y},  
->	PlotLabel -> x^2 - 40 x + 4 y^2 + 400,  
->	ColorFunction -> "BlueGreenYellow"]
+> f := x^2 - 40*x + 4*y^2 + 400
+Plot3D[f, {x, -1, 41}, {y, -1, 1}, BoxRatios -> {10, 10, 4}, 
+ ColorFunction -> Function[{x, y, z}, Hue[.65 (1 - z)]], 
+ AxesLabel -> Automatic, PlotLabel -> f, 
+ PlotStyle -> PointLight[White, {1, 1, 1}]]
 > ```
 > ```
-> Show[%31,ViewPoint->{0,0,\[Infinity]}]
+> Show[%133, ViewPoint -> {0, 0, \[Infinity]}]
 > ```
 
 # Consegna
@@ -33,11 +34,11 @@ $$x^2-40x+4y^2+400 \xrightarrow{(x-x_0)^2+(y-y_0)^2} (x-20)^2+(2y-0)^2$$
 - Visualizziamo la geometria dei punti appena trovati.
   Possiamo dire subito che l'aspetto sarà quello di un paraboloide ellittico.
   
-  | ![[Pasted image 20230603194609.png]]                                                                                                     |
+  | ![[Pasted image 20230604182805.png\|500]]                                                                                                     |
   | :---------------------------------------------------------------------------------------------------------------------------------------------: |
   | Il grafico interseca in un punto, l'asse delle ascisse $x=20$, come se stessimo lavorando con una parabola, il nostro grafico ha la simmetria rispetto le ordinate|
   
-  | ![[Pasted image 20230603194948.png]] |
+  | ![[Pasted image 20230604182900.png\|300]] |
   | :------------------------------------: |
   |       Vista ortografica dall'alto                               |
   
@@ -49,10 +50,9 @@ $$f(x,y)=\begin{cases}
 8y=0
 \end{cases}
 \begin{cases}
-x=0\\
-y=0
-\end{cases}\quad\to\quad f(0,0)=400$$
-Un punto globale non lo abbiamo trovato ma se non altro, sappiamo qual'è il gradiente della funzione, siccome richiestoci di calcolare.
+x=20\\
+y=0\end{cases}$$
+Il punto stazionario esiste ed è esattamente la radice dell'equazione, calcolata in alto. Sostituendo il punto stazionario $x=20$, verificheremmo che questo è parte della funzione.
 
 ---
 28/03/2023
