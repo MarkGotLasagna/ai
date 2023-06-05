@@ -7,7 +7,7 @@ $$h(l)=\begin{cases}
 1\qquad l=10 \\
 0\qquad \mathtt{altrimenti}
 \end{cases}$$
-Sapendo che $f$ è contenuta in $h$, <mark style="background: #FFF3A3A6;">calcolare il valore di una terza funzione</mark> $g:h \circ f$ e <mark style="background: #FFF3A3A6;">tracciarne il grafico</mark>.
+Sapendo che $f$ è contenuta in $h$, calcolare il ==valore di una terza funzione== $g:h \circ f$ e ==tracciarne il grafico==.
 
 - Riscriviamo la consegna per aiutare la comprensione.
   $$f(x,y):\mathbb{R}^2\to\mathbb{R}=-9x^2-16y^2+154\quad,\quad g:h\circ f\begin{cases}

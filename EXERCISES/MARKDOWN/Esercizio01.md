@@ -1,7 +1,7 @@
 ```toc
 ```
 # Consegna
-Si consideri una funzione continua $f$ del tipo $\mathbb{R}^2\to\mathbb{R}$, definita in $x,y$ dall'equazione $3x^2+4y^2+5$. <mark style="background: #FFF3A3A6;">Calcolare il massimo</mark> della funzione $f$, contenuta in una palla chiusa $\mathcal{B}$ di raggio $2$ e centro $1,0$.
+Si consideri una funzione continua $f$ del tipo $\mathbb{R}^2\to\mathbb{R}$, definita in $x,y$ dall'equazione $3x^2+4y^2+5$. ==Calcolare il massimo== della funzione $f$, contenuta in una palla chiusa $\mathcal{B}$ di raggio $2$ e centro $1,0$.
 
 - Per aiutarci nella risoluzione dell'esercizio, <u>riscriviamo</u> in modo più compatto <u>la consegna</u>, in modo di avere per i successivi esercizi, un criterio standard da seguire per essere più precisi e sicuri  $$f(x,y):\mathbb{R}^2\to\mathbb{R}=3x^2+4y^2+5\qquad \in\qquad \mathcal{B}_2[1,0]$$
 - Notare come la palla definita, sia una chiusa.

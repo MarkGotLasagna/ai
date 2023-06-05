@@ -1,7 +1,7 @@
 ```toc
 ```
 # Consegna
-Data una funzione lineare $f$ del tipo $\mathbb{R}^2\to\mathbb{R}$ definita $3x^2-2y^2+7$, <mark style="background: #FFF3A3A6;">trovarne il punto massimo</mark>, considerandola inclusa in un compatto $\mathcal{D}$ definito da $[1,1][-1,1]$.
+Data una funzione lineare $f$ del tipo $\mathbb{R}^2\to\mathbb{R}$ definita $3x^2-2y^2+7$, trovarne il ==punto massimo==, considerandola inclusa in un compatto $\mathcal{D}$ definito da $[1,1][-1,1]$.
 - <u>Riscriviamo</u> la <u>consegna</u> per renderla più leggibile.
   $$f(x,y):\mathbb{R}^2\to\mathbb{R}=3x^2-2y^2+7\quad\in\quad \mathcal{D}[1,1][-1,1]$$
 - L'insieme su cui la funzione è definita, è chiuso e limitato.

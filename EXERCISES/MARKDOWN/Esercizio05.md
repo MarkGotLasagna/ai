@@ -6,8 +6,8 @@ Viene fornita una funzione $\mathbb{R}^2\to\mathbb{R}:f(x,y)$ con le seguenti pr
 - la funzione calcolata in $f(0,0)$ vale $8$, e
 - il gradiente della funzione è $\nabla f(x,y)=(6(x-1),10(y+1))$
 
-Sapendo ciò, calcolare la <u>norma quadro del gradiente</u> $\nabla f(x,y)$. 
-Esistono punti stazionari? Se sì, dimostrarne l'esistenza.
+Sapendo ciò, calcolare la ==norma quadro del gradiente== $\nabla f(x,y)$. 
+Esistono ==punti stazionari==? Se sì, dimostrarne l'esistenza.
 
 # Risoluzione
 ## Norma quadro del gradiente

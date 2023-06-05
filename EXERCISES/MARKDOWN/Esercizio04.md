@@ -15,7 +15,7 @@ Plot3D[f, {x, -1, 41}, {y, -1, 1}, BoxRatios -> {10, 10, 4},
 > ```
 
 # Consegna
-Viene fornita una funzione del tipo $\mathbb{R}^2:x^2-40x+4y^2+400$. Calcolare il gradiente della funzione, indicando quali sono (e se ci sono), punti di simmetria.
+Viene fornita una funzione del tipo $\mathbb{R}^2:x^2-40x+4y^2+400$. Calcolare il ==gradiente della funzione==, indicando quali sono (e se ci sono), ==punti di simmetria==.
 
 # Risoluzione
 ## Simmetria della funzione
