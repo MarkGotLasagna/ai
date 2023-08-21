@@ -29,5 +29,5 @@ git clone --filter=blob:none --depth 1 --sparse https://github.com/MarkGotLasagn
 └── src --> plot ascesa/discesa gradiente
 ```
 
-## Contributing
-Siete liberi di fare precisazioni o correzzioni o altro, aprendo "Issues" o "Pull Request" negli appositi TAB.
+## Other repos
+- Dennis Turco - [Appelli svolti](https://github.com/DennisTurco/Intelligenza-Artificiale)
