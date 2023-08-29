@@ -56,8 +56,8 @@ L'aggiunta del nodo può essere modificata, presentando diversi metodi di espans
 
 Questi due tipi di costruzione dell'albero di ricerca e di pianificazione, prendono il nome di *ricerche non informate*, perché alla fine quello che a noi interessa è trovare una sequenza più breve con un certo costo. 
 
-## Ricerca informata
-Una *ricerca informata* via di mezzo, esiste e si chiama *ricerca per approfondimenti successivi* della ricerca in profondità (Iterative Deepening Depth-First Search ID-DFS)
+---
+Una ricerca via di mezzo, esiste e si chiama *ricerca per approfondimenti successivi* della ricerca in profondità (Iterative Deepening Depth-First Search ID-DFS)
 - Una ricerca DFS viene usata andando a fissare una <u>profondità massima</u> $n$, al cui possono succedere 2 opzioni:
   1. viene trovato un nodo goal con meno di $n$ azioni, il costo è lineare;
   2. viene espanso l'albero fino al livello $n$ ma il goal non viene trovato.
